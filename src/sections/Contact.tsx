@@ -51,7 +51,7 @@ const Contact = () => {
             Let's build something together.
           </h2>
 
-          <p className="mt-5 max-w-2xl leading-7 text-slate-500">
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
             I'm open to discussing internships, software
             development opportunities, projects, and interesting
             ideas.
@@ -67,7 +67,7 @@ const Contact = () => {
               Get in touch
             </h3>
 
-            <p className="mt-4 max-w-md leading-7 text-slate-500">
+            <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
               Feel free to reach out through email or connect
               with me on professional platforms.
             </p>

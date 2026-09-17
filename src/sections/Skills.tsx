@@ -17,7 +17,7 @@ const Skills = () => {
             Technologies I work with.
           </h2>
 
-          <p className="mt-5 max-w-2xl text-slate-500">
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
             A collection of technologies and tools I use while
             building applications and learning new concepts.
           </p>

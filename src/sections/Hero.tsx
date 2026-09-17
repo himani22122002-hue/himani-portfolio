@@ -57,7 +57,7 @@ const Hero = () => {
           </h2>
 
           {/* Description */}
-          <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
             I build modern web applications and explore AI-powered
             solutions with a focus on clean, scalable, and
             user-friendly experiences.
@@ -116,7 +116,7 @@ const Hero = () => {
                 className="h-5 w-5 fill-current"
                 aria-hidden="true"
               >
-                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.54 20.45H7.1V8.99H3.54v11.46ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0Z" />
+                <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.54 20.45H7.1V8.99H3.54v11.46ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 .77.79 24 1.77 24h20.46C23.21 24 24 23.23 24 22.28V1.72C24 .77 23.21 0 22.23 0Z" />
               </svg>
             </a>
 
@@ -130,100 +130,102 @@ const Hero = () => {
 
         {/* ================= RIGHT PROFILE ================= */}
 
-        <div className="relative mx-auto flex h-[540px] w-full max-w-[540px] items-center justify-center">
-          {/* Main Glow */}
-          <div className="absolute h-[400px] w-[400px] rounded-full bg-cyan-400/[0.04] blur-3xl" />
+        {/* ================= RIGHT PROFILE ================= */}
 
-          {/* Outer Orbit */}
-          <div className="absolute h-[440px] w-[440px] rounded-full border border-cyan-400/[0.10]" />
+<div className="relative mx-auto flex h-[430px] w-full max-w-[390px] items-center justify-center lg:h-[500px] lg:max-w-[500px] xl:h-[540px] xl:max-w-[540px]">
 
-          {/* Middle Orbit */}
-          <div className="absolute h-[380px] w-[380px] rounded-full border border-white/[0.07]" />
+  {/* Main Glow */}
+  <div className="absolute h-[300px] w-[300px] rounded-full bg-cyan-400/[0.04] blur-3xl lg:h-[370px] lg:w-[370px] xl:h-[400px] xl:w-[400px]" />
 
-          {/* Inner Orbit */}
-          <div className="absolute h-[330px] w-[330px] rounded-full border border-cyan-400/[0.08]" />
+  {/* Outer Orbit */}
+  <div className="absolute h-[330px] w-[330px] rounded-full border border-cyan-400/[0.10] lg:h-[400px] lg:w-[400px] xl:h-[440px] xl:w-[440px]" />
 
-          {/* ================= PROFILE IMAGE ================= */}
+  {/* Middle Orbit */}
+  <div className="absolute h-[285px] w-[285px] rounded-full border border-white/[0.07] lg:h-[345px] lg:w-[345px] xl:h-[380px] xl:w-[380px]" />
 
-          <div className="relative z-10 h-[290px] w-[290px] overflow-hidden rounded-full border-2 border-cyan-400/40 bg-slate-900 shadow-2xl shadow-cyan-400/10">
-            <img
-              src={profileImage}
-              alt="Himani Joshi"
-              className="h-full w-full object-cover"
-            />
+  {/* Inner Orbit */}
+  <div className="absolute h-[250px] w-[250px] rounded-full border border-cyan-400/[0.08] lg:h-[300px] lg:w-[300px] xl:h-[330px] xl:w-[330px]" />
 
-            {/* Image Overlay */}
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-cyan-400/[0.05]" />
-          </div>
+  {/* ================= PROFILE IMAGE ================= */}
 
-          {/* ================= SKILL BADGES ================= */}
+  <div className="relative z-10 h-[215px] w-[215px] overflow-hidden rounded-full border-2 border-cyan-400/40 bg-slate-900 shadow-2xl shadow-cyan-400/10 lg:h-[255px] lg:w-[255px] xl:h-[290px] xl:w-[290px]">
+    <img
+      src={profileImage}
+      alt="Himani Joshi"
+      className="h-full w-full object-cover"
+    />
 
-          {/* React - Top Right */}
-          <div className="absolute right-[28px] top-[115px] rounded-xl border border-cyan-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-cyan-400/50">
-            <p className="text-xs font-semibold text-cyan-400">
-              React
-            </p>
-          </div>
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-cyan-400/[0.05]" />
+  </div>
 
-          {/* Python - Left */}
-          <div className="absolute left-[5px] top-[255px] rounded-xl border border-yellow-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-yellow-400/40">
-            <p className="text-xs font-semibold text-yellow-300">
-              Python
-            </p>
-          </div>
+  {/* ================= SKILL BADGES ================= */}
 
-          {/* TypeScript - Bottom Right */}
-          <div className="absolute bottom-[75px] right-[55px] rounded-xl border border-blue-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-blue-400/40">
-            <p className="text-xs font-semibold text-blue-400">
-              TypeScript
-            </p>
-          </div>
+  {/* Git - Top Center */}
+  <div className="absolute left-1/2 top-[8px] -translate-x-1/2 rounded-xl border border-orange-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-orange-400/40 lg:top-[18px] xl:top-[28px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-orange-400 xl:text-xs">
+      Git
+    </p>
+  </div>
 
-          {/* Node.js - Top Left */}
-          <div className="absolute left-[70px] top-[80px] rounded-xl border border-green-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-green-400/40">
-            <p className="text-xs font-semibold text-green-400">
-              Node.js
-            </p>
-          </div>
+  {/* Node.js - Upper Left */}
+  <div className="absolute left-[32px] top-[48px] rounded-xl border border-green-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-green-400/40 lg:left-[55px] lg:top-[65px] xl:left-[70px] xl:top-[80px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-green-400 xl:text-xs">
+      Node.js
+    </p>
+  </div>
 
-          {/* PostgreSQL - Bottom Left */}
-          <div className="absolute bottom-[85px] left-[65px] rounded-xl border border-indigo-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-indigo-400/40">
-            <p className="text-xs font-semibold text-indigo-400">
-              PostgreSQL
-            </p>
-          </div>
+  {/* React - Upper Right */}
+  <div className="absolute right-[8px] top-[82px] rounded-xl border border-cyan-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-cyan-400/50 lg:right-[25px] lg:top-[100px] xl:right-[28px] xl:top-[115px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-cyan-400 xl:text-xs">
+      React
+    </p>
+  </div>
 
-          {/* Tailwind - Right */}
-          <div className="absolute right-[0px] top-[270px] rounded-xl border border-sky-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-sky-400/40">
-            <p className="text-xs font-semibold text-sky-400">
-              Tailwind
-            </p>
-          </div>
+  {/* Python - Left Center */}
+  <div className="absolute left-[0px] top-[190px] rounded-xl border border-yellow-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-yellow-400/40 lg:left-[8px] lg:top-[225px] xl:left-[5px] xl:top-[255px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-yellow-300 xl:text-xs">
+      Python
+    </p>
+  </div>
 
-          {/* Git - Top */}
-          <div className="absolute left-1/2 top-[28px] -translate-x-1/2 rounded-xl border border-orange-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-orange-400/40">
-            <p className="text-xs font-semibold text-orange-400">
-              Git
-            </p>
-          </div>
+  {/* Tailwind - Right Center */}
+  <div className="absolute right-[0px] top-[190px] rounded-xl border border-sky-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-sky-400/40 lg:right-[8px] lg:top-[235px] xl:right-[0px] xl:top-[270px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-sky-400 xl:text-xs">
+      Tailwind
+    </p>
+  </div>
 
-          {/* AI - Bottom */}
-          <div className="absolute bottom-[28px] left-1/2 -translate-x-1/2 rounded-xl border border-purple-400/20 bg-slate-900/95 px-4 py-2.5 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-purple-400/40">
-            <p className="text-xs font-semibold text-purple-400">
-              AI
-            </p>
-          </div>
+  {/* PostgreSQL - Bottom Left */}
+  <div className="absolute bottom-[45px] left-[28px] rounded-xl border border-indigo-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-indigo-400/40 lg:bottom-[58px] lg:left-[48px] xl:bottom-[85px] xl:left-[65px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-indigo-400 xl:text-xs">
+      PostgreSQL
+    </p>
+  </div>
 
-          {/* Open To Work */}
-          <div className="absolute left-[45px] top-[175px] z-20 flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/95 px-4 py-2 shadow-xl backdrop-blur-xl">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+  {/* TypeScript - Bottom Right */}
+  <div className="absolute bottom-[45px] right-[28px] rounded-xl border border-blue-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-blue-400/40 lg:bottom-[58px] lg:right-[48px] xl:bottom-[75px] xl:right-[55px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-blue-400 xl:text-xs">
+      TypeScript
+    </p>
+  </div>
 
-            <span className="text-xs text-slate-400">
-              Open to work
-            </span>
-          </div>
-        </div>
-      </div>
+  {/* AI - Bottom Center */}
+  <div className="absolute bottom-[5px] left-1/2 -translate-x-1/2 rounded-xl border border-purple-400/20 bg-slate-900/95 px-3 py-2 shadow-xl backdrop-blur-xl transition duration-300 hover:scale-110 hover:border-purple-400/40 lg:bottom-[15px] xl:bottom-[28px] xl:px-4 xl:py-2.5">
+    <p className="text-[10px] font-semibold text-purple-400 xl:text-xs">
+      AI
+    </p>
+  </div>
+
+  {/* Open To Work */}
+  <div className="absolute left-[18px] top-[155px] z-20 flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/95 px-3 py-1.5 shadow-xl backdrop-blur-xl lg:left-[35px] lg:top-[170px] xl:left-[45px] xl:top-[175px] xl:px-4 xl:py-2">
+    <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-400" />
+
+    <span className="text-[10px] text-slate-400 xl:text-xs">
+      Open to work
+    </span>
+  </div>
+</div>
+</div>
 
       {/* Scroll Indicator */}
       <a

@@ -34,11 +34,11 @@ const Education = () => {
                 Computer Engineering
               </h3>
 
-              <p className="mt-2 text-slate-400">
+              <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
                 GB Pant University of Agriculture and Technology
               </p>
 
-              <p className="mt-4 text-sm leading-6 text-slate-500">
+              <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
                 Studied computer engineering with focus on software
                 development, programming, databases, operating
                 systems, computer networks, and modern computing
@@ -64,7 +64,7 @@ const Education = () => {
                 Government Girls Polytechnic, Almora
               </p>
 
-              <p className="mt-4 text-sm leading-6 text-slate-500">
+              <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
                 Built a foundation in programming, databases,
                 computer systems, software development, and
                 information technology.

@@ -19,15 +19,15 @@ const About = () => {
           
           {/* Left Content */}
           <div className="max-w-3xl">
-            <p className="text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
               I am a Computer Engineering graduate with a strong interest in full-stack development, software development, and artificial intelligence. I enjoy building practical applications that solve real-world problems and provide a smooth user experience.
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
               I have hands-on experience working with technologies like React, TypeScript, Node.js, Python, PostgreSQL, and REST APIs. I enjoy working across both frontend and backend development and understanding how different parts of an application work together.
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-400">
+            <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
               I have worked on projects such as CampusLynk, a college networking platform, along with AI-powered applications and database-driven systems. These projects have helped me improve my development, debugging, and problem-solving skills.
               I am a curious and continuous learner who enjoys exploring new technologies, experimenting with ideas, and turning concepts into working solutions. My goal is to grow as a software developer while contributing to meaningful and impactful products.
             </p>

@@ -18,7 +18,7 @@ const Projects = () => {
             Things I've built.
           </h2>
 
-          <p className="mt-5 max-w-2xl text-slate-500">
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-slate-400 sm:text-lg">
             A selection of projects that showcase my development
             skills and interest in building practical solutions.
           </p>
@@ -64,9 +64,9 @@ const Projects = () => {
 
 
                   {/* Description */}
-                  <p className="mt-4 max-w-2xl leading-7 text-slate-400">
-                    {project.description}
-                  </p>
+                  <p className="mt-4 text-justify text-sm leading-7 text-slate-400">
+  {project.description}
+</p>
 
 
                   {/* Features */}
